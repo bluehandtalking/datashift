@@ -7,9 +7,9 @@
 #
 require 'fileutils'
   
-module DataShift
+module DataShift::Logging
 
-  module Logging
+#  module Logging
     
     class MultiIO
            
@@ -53,6 +53,6 @@ module DataShift
       log_file = File.open( File.join(logdir(), 'datashift.log'), "a")
       MultiIO.new(log_file)
     end
-  end
+#  end
   
 end
